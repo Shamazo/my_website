@@ -1,0 +1,70 @@
+.photo-intro p  {
+	/*color: #FFFFFF;*/
+	font-family: "montserrat-regular", sans-serif;
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 3.6rem;
+
+}
+
+.home-content  p {
+	color: #FFFFFF;
+	font-family: "montserrat-regular", sans-serif;
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 3.6rem;
+}
+
+.home-content  h1{
+	font-size: 5rem;
+}
+
+/*#photography h1 {
+color: #FFFFFF;
+}
+*/
+#photography {
+	background: #fff;
+}
+
+#works {
+	background: #5f5f5f;
+}
+
+.s-works {
+	background: #5f5f5f;
+	padding-tope: 10rem;
+}
+
+.s-photography {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+    background: #fff;
+}
+
+#resume {
+	padding-top: 2rem;
+    background: #fff;
+}
+
+#tech-skills {
+	margin-top: 0rem;
+}
+
+/*Circle profile pic*/
+#about .profile-pic {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+/*contact background set*/
+.s-contact {
+background-image: url(/static/images/lake.jpg);
+}
+
+.education-header {
+	margin-top: 0rem;
+}
