@@ -3,7 +3,6 @@
 #Personal Website Backend Source Code
 ###########################################################################
 from flask import *
-
 # app configurations
 application = Flask(__name__)
 # home page
@@ -12,13 +11,13 @@ def index():
     return render_template('index.html')
 
 # Still working on the blog section
-# @app.route('/blog.html')
+# @application.route('/blog')
 # def blog():
-# 	return render_template('blog.html')
+# 	return render_template('jingablog.html')
 
-# @app.route('/blog-single.html')
+# @application.route('/blog-single')
 # def blog_single():
-# 	return render_template('blog-single.html')
+# 	return render_template('testblog.html')
 
 # app call
 if __name__ == '__main__':

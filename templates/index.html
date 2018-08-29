@@ -1,69 +1,6 @@
-<!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Hamish</title>
-    <meta name="The personal website of Hamish Nicholson, rising junior at Harvard College studying computer science and statistics." content="">
-    <meta name="Hamish Nicholson" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="/static/css/base.css">
-    <link rel="stylesheet" href="/static/css/vendor.css">
-    <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/custom.css">
-    <!-- script
-    ================================================== -->
-    <script src="/static/js/modernizr.js"></script>
-    <script src="/static/js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-      <!--   <div class="header-logo">
-            <a class="site-logo" href="index.html"><img src="/static/images/logo.png" alt="Homepage"></a>
-        </div> -->
-
-        <nav class="header-nav-wrap">
-            <ul class="header-nav">
-                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll"  href="#resume" title="works">Resume</a></li>
-                <!-- <li><a class="smoothscroll"  href="#works" title="works">Projects</a></li> -->
-                <li><a class="smoothscroll"  href="#photography" title="photography">Photography</a></li>
-               <!--  <li><a class="smoothscroll"  href="#blog" title="blog">Blog</a></li> -->
-                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-   <!-- home
+ {% extends "base.html"%}
+ {% block content%}
+ <!-- home
    ================================================== -->
    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="/static/images/lighthouse.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
@@ -80,13 +17,13 @@
                     My name is Hamish Nicholson. <br>
                 </h1>
                 <p>
-                    I am a student, global citizen and future computer scientist. I am interested in both the theory and practice of computer science and statistics. I am passionate about leveraging my knowledge of computing to produce meaningful results in other fields.  
+                    I am a student and future computer scientist. I am interested in both the theory and practice of computer science and statistics. I am keen to leverage my knowledge of computing to produce meaningful results in other fields.  
                 </p>
 
                 <div class="home-content__buttons">
-                    <a href="#works" class="smoothscroll btn btn--stroke">
+                    <!-- <a href="#works" class="smoothscroll btn btn--stroke">
                         Latest Projects
-                    </a>
+                    </a> -->
                     <a href="#about" class="smoothscroll btn btn--stroke">
                         More About Me
                     </a>
@@ -142,7 +79,7 @@
                 <!-- <h3>Howdy!</h3> -->
 
                 <p>
-                I grew up in Mount Eliza, which is a small town just outside of Melbourne, Victoria. I am interested in both computer science theory, including information thoery, coding theory and theoretical machine learning as well as applying computer science to other fields, especially the natural sciences which frequently have astronomical data sets (pun intended). Outside of academics I am a photographer, DJ, concert goer and audio equipment enthusiast. Depending on my workload, you can catch me hosting a radio show at <a href="https://whrb.org"> WHRB 95.3FM</a>, Harvard's fully student run radio station where I am also the tech director. I listen to everything from Australian psychedelic rock and French Rap to European Techno and peacful soundscapes. 
+                I grew up in Mount Eliza, which is a small town just outside of Melbourne, Victoria. I am interested in both computer science theory, including information thoery, coding theory and theoretical machine learning as well as applying computer science to other fields, especially the natural sciences which frequently have astronomical data sets (pun intended). Outside of academics I am a photographer, DJ, concert goer and audio equipment enthusiast. Depending on my workload, you can tune in to my radio show at <a href="https://whrb.org"> WHRB 95.3FM</a>, Harvard's fully student run radio station where I am also the tech director. I listen to Australian psychedelic rock, French Rap, European electronica and peaceful soundscapes. Be sure to check out the photography tab below for some of my recent photos.
                 </p>
             </div>
 
@@ -151,31 +88,31 @@
 
                 <ul class="skill-bars">
                     <li>
-                    <div class="progress 80%"><span></span></div>
+                    <div class="progress percent80"></div>
                     <strong>Python</strong>
                     </li>
                     <li>
-                    <div class="progress 70%"><span></span></div>
+                    <div class="progress percent70"></div>
                     <strong>C</strong>
                     </li>
                     <li>
-                    <div class="progress 70%"><span></span></div>
+                    <div class="progress percent70"></div>
                     <strong>OCaml</strong>
                     </li>
                     <li>
-                    <div class="progress 60%"><span></span></div>
+                    <div class="progress percent60"></div>
                     <strong>IDL</strong>
                     </li>
                     <li>
-                    <div class="progress 65%"><span></span></div>
+                    <div class="progress percent65"></div>
                     <strong>HTML & CSS</strong>
                     </li>   
                     <li>
-                    <div class="progress 40%"><span></span></div>
+                    <div class="progress percent40"></div>
                     <strong>SQL</strong>
                     </li>   
                     <li>
-                    <div class="progress 75%"><span></span></div>
+                    <div class="progress percent75"></div>
                     <strong> Linux/Unix systems</strong>
                     </li>
                 </ul>
@@ -214,7 +151,7 @@
                         <h5>Summer Undergraduate Research Fellow</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>At JPL I worked in the Planetary and Exoplanetary Atmosphers group (3222) with Dr. Glenn Orton. I conducted research on fine scale waves in Jupiter's atmosphere by analyzing data from the JunoCam instrument, which is the visible spectrum camera on the Juno orbiter. I determined the statistical range of the waves as well as properties of specific waves. I also generated the largest catalogue of finescale waves in the visible spectrum on Jupiter to date.</p>
+                        <p>I worked in the Planetary and Exoplanetary Atmosphers group (3222) with Dr. Glenn Orton. I conducted research on fine scale waves in Jupiter's atmosphere by analyzing data from the JunoCam instrument, which is the visible spectrum camera on the Juno orbiter. I determined their statistical range as well as properties of specific waves. One of my end products was the largest catalogue of finescale waves in the visible spectrum on Jupiter to date.</p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -226,11 +163,11 @@
                <div class="col-ten">
                    <div class="timeline__header">
                         <p class="timeline__timeframe">Febuary 2018 - Present</p>
-                        <h3>Bereau of Study Counsel</h3>
+                        <h3>Bureau of Study Counsel</h3>
                         <h5>Peer Tutor</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>Depending on the semester, I am either tutoring students in CS50 - Introduction to Computer Science or CS51 - Abstraction and Design in Computation. CS50 covers rudiemntary computer science concepts in C, Python, SQL and Javascript while CS51 focuses on methods of abstraction such as object oriented programming, functional programming and imperative programming in OCaml.</p>
+                        <p>During the school year, I tutor fellow students in CS50 - Introduction to Computer Science or CS51 - Abstraction and Design in Computation. CS50 covers rudimentary computer science concepts in C, Python, SQL and Javascript while CS51 focuses on methods of abstraction such as object oriented programming, functional programming and imperative programming in OCaml.</p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -246,7 +183,7 @@
                         <h5>Course Assitant</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>As a course Assistant for CS50 I held weekly office hours for students to answer conceptual questions and to help them on their problem sets. I was also involved in the grading process for exams. </p>
+                        <p>As a course Assistant for CS50, I held weekly office hours to answer students' conceptual questions and to help them with problem sets. I was also involved in the grading process for exams. </p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -273,7 +210,7 @@
                     </div>
                     <div class="timeline__desc">
                      <p>Harvard Summer School 2017 - Study Abroad in Prague (Czech language and culture). <br />
-                     <u>Activities and Societies:</u> Tech director, DJ and previously Assistant General Manager at <a href="https://www.whrb.org/"> WHRB 95.3FM </a>, Secretary of the Harvard College European Society, Secretary of the Harvard Photography Club </p>
+                     <u>Activities and Societies:</u> Tech director, DJ and previously Assistant General Manager at <a href="https://www.whrb.org/"> WHRB 95.3FM</a>, Secretary of the Harvard College European Society, Secretary of the Harvard Photography Club </p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -289,7 +226,7 @@
                         <h5>Bachelor of Science</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>Prior to my acceptance to Harvard I started a semester at the University of Melbourne. I took first year courses in physics, calculucs, linear algebra and programming. I was a member of the Ormond College residential community.</p>
+                        <p>Prior to my acceptance to Harvard, I did a semester at the University of Melbourne. I took first year courses in physics, calculucs, linear algebra and programming. I was a member of the Ormond College residential community.</p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -305,7 +242,8 @@
                         <h5>Victorian Certificate of Education</h5>
                     </div>
                     <div class="timeline__desc">
-                        <u>Activities and Societies:</u> Chair of the Science and Technology committee, Secretary of the Indiginous Reconciliation committee, Played Rugby Union for six years including starting on the first fifteen, Environmental Science Prize, Humanitarian trip to Cambodia (December 2014)</p>
+                        <u>Activities and Societies:</u> Chair of the Science and Technology Committee, Secretary of the Indiginous Reconciliation Committee, played Rugby Union for six years including starting on the first fifteen. <br>
+                        Earnt the Environmental Science Prize; went on humanitarian trip to Cambodia (December 2014)</p>
                     </div>
                 </div>
             </div> <!-- item end -->
@@ -865,7 +803,7 @@
                 <h3>Contact</h3>
                 <h1>Say Hi!</h1>
                 
-                <p class="lead">If you want to talk to me about new opportunities or collaborate on a project send me and email or contact me on social media. I am always interested in meeting new people. I am always down to talk on topics ranging from global geo-politics and gerrymandering to astrophysics and artificial intelligence. </p>
+                <p class="lead">If you want to talk to me about new opportunities or collaborate on a project send me an email or contact me on social media. I am always interested in meeting new people. I like to talk about many topics, ranging from global geo-politics and gerrymandering to astrophysics and artificial intelligence. </p>
             </div>
         </div>
 
@@ -877,8 +815,8 @@
             <div class="col-full tab-full contact__infos">
                 <h4 class="h06">Phone</h4>
                 <p>
-                Mobile: six one seven 407-0173<br>
-                I get a very large number of spam calls, so if you want to chat it's better to shoot me an email first.
+                Mobile: 617 407 0173<br>
+                (If you want to chat it's better to shoot me an email first.)
                 </p>
 
                 <h4 class="h06">Email</h4>
@@ -890,99 +828,4 @@
 
     </section> <!-- end s-contact -->
 
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full">
-
-                <ul class="footer-social">
-                    <li>
-                    <a href="https://www.facebook.com/hamish.nicholson.3"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/hamish-nicholson-53ba1a145/"><i class="im im-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/lil_hame/"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/shamazo"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-
-        <div class="row footer-bottom">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright Hamish Nicholson 2018</span> 
-                    <!-- <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	 -->
-                </div>
-
-                <div class="go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="/static/js/jquery-3.2.1.min.js"></script>
-    <script src="/static/js/plugins.js"></script>
-    <script src="/static/js/main.js"></script>
-
-</body>
-
-</html>
+{% endblock%}
